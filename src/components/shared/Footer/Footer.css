@@ -1,0 +1,11 @@
+footer{
+    height: 200px;
+    background-color: rgba(0,153,255,.5);
+  }
+  
+  .icon p{
+    font-size: 20px;
+  }
+  .icon p:hover{
+    border-bottom: 3px solid white;
+  }

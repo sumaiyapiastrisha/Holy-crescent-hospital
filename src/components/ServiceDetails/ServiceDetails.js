@@ -9,8 +9,8 @@ const ServiceDetails = () => {
     const [services] = useFetch();
     return (
         <div>
-            <h1>{id}</h1>
-            <div className="service-container">
+
+            <div class="card mb-3 service-container mx-5"  >
                 {
 
                     services.filter(service => service.id == id).map(service => <ServiceDetail

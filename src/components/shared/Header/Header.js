@@ -20,7 +20,7 @@ const Header = () => {
                     <Navbar.Brand href="#home">Holy Creasent Hospital</Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
-                        <Nav.Link as={Link} to="/home#home">Home</Nav.Link>
+                        <Nav.Link as={Link} to="/home">Home</Nav.Link>
                         <Nav.Link as={Link} to="/services">services</Nav.Link>
                         <Nav.Link as={Link} to="/about">About us</Nav.Link>
                         <Nav.Link as={Link} to="/doctors"> Our Doctors</Nav.Link>
@@ -29,7 +29,7 @@ const Header = () => {
                             <Nav.Link as={Link} to="/register">Register</Nav.Link>}
                         <Navbar.Text>
 
-                            Signed in as: <a href="#login">{user?.displayName}</a>
+                            Signed in as: <a href=" #register">{user?.displayName}</a>
                         </Navbar.Text>
                     </Navbar.Collapse>
 
