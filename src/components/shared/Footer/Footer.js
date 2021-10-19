@@ -31,7 +31,7 @@ const Footer = () => {
                 </div>
             </div>
             <div>
-                <p>&copy; Copyright 2021 Be programmer</p>
+                <p>&copy; Copyright 2021 Holy Creasent Hospital</p>
 
             </div>
 
