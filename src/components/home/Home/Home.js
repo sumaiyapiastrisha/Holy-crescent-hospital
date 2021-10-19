@@ -39,7 +39,7 @@ const Home = () => {
                 <Link to="/services" className="btn btn-primary px-5 mt-5">See all</Link>
             </div>
 
-
+            {/* Posts */}
 
             <div>
                 <div className="my-5 pt-5">
