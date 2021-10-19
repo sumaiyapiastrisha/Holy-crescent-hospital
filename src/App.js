@@ -27,13 +27,13 @@ function App() {
           <Header></Header>
           <Switch>
             <Route exact path="/"><Home></Home></Route>
-            <Route path="/home"><Home></Home></Route>
+            <Route exact path="/home"><Home></Home></Route>
             <PrivateRoute path="/serviceDetails/:id"><ServiceDetails></ServiceDetails></PrivateRoute>
-            <Route path="/doctors"><Doctor></Doctor></Route>
-            <Route path="/services"><Services></Services></Route>
-            <Route path="/about"><About></About></Route>
-            <Route path="/login"><Login></Login></Route>
-            <Route path="/register"><Register></Register></Route>
+            <Route exact path="/doctors"><Doctor></Doctor></Route>
+            <Route exact path="/services"><Services></Services></Route>
+            <Route exact path="/about"><About></About></Route>
+            <Route exact path="/login"><Login></Login></Route>
+            <Route exact path="/register"><Register></Register></Route>
             <Route path="*"><NotFound></NotFound></Route>
 
           </Switch>
