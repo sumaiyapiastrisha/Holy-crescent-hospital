@@ -3,6 +3,8 @@ import { useParams } from 'react-router';
 import useFetch from '../../hooks/useFetch';
 import ServiceDetail from '../ServiceDetail/ServiceDetail';
 
+
+// send data of single service using useparams
 const ServiceDetails = () => {
     const { id } = useParams();
 
@@ -10,7 +12,7 @@ const ServiceDetails = () => {
     return (
         <div>
 
-            <div class="card mb-3 service-container mx-5"  >
+            <div class="card mb-3   border-0 mx-5"  >
                 {
 
                     services.filter(service => service.id == id).map(service => <ServiceDetail

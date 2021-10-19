@@ -10,11 +10,13 @@ const Home = () => {
     const slicedServices = services.slice(1, 7);
     return (
         <div>
-
+            {/* banner part */}
             <div>
                 <Banner></Banner>
             </div>
 
+
+            {/* TopServices part */}
 
             <div>
                 <div>
@@ -72,11 +74,14 @@ const Home = () => {
                 </div>
             </div>
 
-            <div class="row g-0 service-Detail my-5 py-5 philosophy topServices">
-                <div class="col-md-4">
+
+            {/* Our philosophy */}
+
+            <div class="row g-0  my-5 py-5 philosophy topServices">
+                <div class="col-md-6">
                     <img src="https://img1.grunge.com/img/gallery/when-did-physicians-start-to-be-called-doctors/intro-1608648669.jpg" class=" rounded-start" alt="" />
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-6">
                     <div class="card-body bg-primary text-white py-5 px-5">
                         <h1 class="card-title">Our Philosophy</h1>
                         <p class="card-text">This is the subtitle for the heading

@@ -10,7 +10,7 @@ const Services = () => {
         <div>
 
             <div>
-                <h1 className="my-5">Our Services</h1>
+                <h1 className="my-5  text-primary">Our Services</h1>
             </div>
 
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 topServices">

@@ -3,6 +3,9 @@ import './Doctors.css'
 
 const Doctor = () => {
     return (
+
+        // Doctors information
+
         <div className="doctors  my-5 py-5">
 
             <div>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './TopServices.css'
 
 const TopServices = (props) => {
-
+    // home page services
     const { id, title, image, price } = props.service;
     return (
         <div className="col service" >

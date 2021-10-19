@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 
+
+// hospital services information fetch
 const useFetch = () => {
     const [services, setServices] = useState([])
 

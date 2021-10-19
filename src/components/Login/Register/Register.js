@@ -2,6 +2,7 @@ import { getAuth, signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPas
 import { useState } from "react";
 
 import initializeAuthentication from "../Firebase/firebase.init";
+import './Register.css'
 
 
 
@@ -42,6 +43,8 @@ function Register() {
         setPassword(e.target.value)
     }
 
+    // Handle  registration
+
     const handleRegistration = e => {
         e.preventDefault();
         console.log(email, password);
@@ -63,6 +66,8 @@ function Register() {
 
     }
 
+    // Handle login 
+
     const processLogin = (email, password) => {
         signInWithEmailAndPassword(auth, email, password)
             .then(result => {
@@ -74,6 +79,8 @@ function Register() {
                 setError(error.message);
             })
     }
+
+    // Register new user
 
     const registerNewUser = (email, password) => {
         createUserWithEmailAndPassword(auth, email, password)
@@ -89,6 +96,7 @@ function Register() {
             })
     }
 
+
     const setUserName = () => {
         updateProfile(auth.currentUser, { displayName: name })
             .then(result => { })
@@ -102,11 +110,12 @@ function Register() {
     }
 
 
-
     return (
-        <div className="mx-5  my-5 d-flex flex-column align-items-center">
+
+        // toogle login and register form
+        <div className="  my-5 d-flex flex-column align-items-center register">
             <form onSubmit={handleRegistration}>
-                <h3 className="text-primary">Please {isLogin ? 'Login' : 'Register'}</h3>
+                <h3 className="text-primary py-4">Please {isLogin ? 'Login' : 'Register'}</h3>
                 {!isLogin && <div className="row mb-3">
 
                     <div className="col-sm-12">
@@ -119,7 +128,7 @@ function Register() {
                         <input onBlur={handleEmailChange} placeholder="Your Email" type="email" className="form-control" id="inputEmail3" required />
                     </div>
                 </div>
-                <div className="row mb-3">
+                <div className="row mb-4">
 
                     <div className="col-sm-12">
                         <input type="password" onBlur={handlePasswordChange} placeholder="Your Password" className="form-control" id="inputPassword3" required />
@@ -142,10 +151,12 @@ function Register() {
 
 
             </form>
-            <br /><br /><br />
+            <br />
             <div>--------------------------------</div>
-            <br /><br /><br />
-            <button className="btn-warning rounded border-0 p-2 px-4" onClick={handleGoogleSignIn}>Google Sign In</button>
+            <br />
+
+            {/* Googlesign in  */}
+            <button className="btn-warning rounded border-0 p-2 px-4 mb-5" onClick={handleGoogleSignIn}>Google Sign In</button>
         </div>
     );
 }

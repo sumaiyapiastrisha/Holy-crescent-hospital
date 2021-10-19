@@ -16,6 +16,8 @@ import Footer from './components/shared/Footer/Footer';
 import Doctor from './components/Doctors/Doctor';
 
 
+// set route
+
 
 function App() {
   return (

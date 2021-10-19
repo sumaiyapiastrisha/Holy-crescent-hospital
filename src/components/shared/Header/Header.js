@@ -3,15 +3,15 @@ import React from 'react';
 import { Navbar, Container, Nav, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
-// import { hashLink } from 'react-router-hash-link'
+
 
 
 const Header = () => {
     const { user, logOut } = useAuth();
     return (
-        // logo
 
 
+        // header part
 
         <>
 
