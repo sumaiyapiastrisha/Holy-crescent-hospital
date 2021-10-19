@@ -26,7 +26,7 @@ const Header = () => {
                         <Nav.Link as={Link} to="/doctors"> Our Doctors</Nav.Link>
                         {user?.email ?
                             <Button onClick={logOut} variant="light">LogOut</Button> :
-                            <Nav.Link as={Link} to="/login">Login</Nav.Link>}
+                            <Nav.Link as={Link} to="/register">Register</Nav.Link>}
                         <Navbar.Text>
 
                             Signed in as: <a href="#login">{user?.displayName}</a>
