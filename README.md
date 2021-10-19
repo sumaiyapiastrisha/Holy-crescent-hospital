@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Holy Creasent Hospital](https://angry-easley-d1a5b4.netlify.app/).
+This project was bootstrapped with [Holy Creasent Hospital](https://holy-creasent-hospital.web.app).
 
 ## Available Scripts
 
