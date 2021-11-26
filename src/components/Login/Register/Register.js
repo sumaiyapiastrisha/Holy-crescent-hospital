@@ -1,5 +1,6 @@
 import { getAuth, signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendEmailVerification, updateProfile } from "firebase/auth";
 import { useState } from "react";
+import { useHistory } from "react-router";
 
 import initializeAuthentication from "../Firebase/firebase.init";
 import './Register.css'
@@ -17,6 +18,7 @@ function Register() {
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     const [isLogin, setIsLogin] = useState(false);
+    const history = useHistory();
 
     const auth = getAuth();
 
@@ -25,6 +27,7 @@ function Register() {
             .then(result => {
                 const user = result.user;
                 console.log(user);
+                history.push('/');
             })
     }
 
@@ -74,6 +77,7 @@ function Register() {
                 const user = result.user;
                 console.log(user);
                 setError('');
+                history.push('/');
             })
             .catch(error => {
                 setError(error.message);
@@ -88,8 +92,9 @@ function Register() {
                 const user = result.user;
                 console.log(user);
                 setError('');
-                verifyEmail();
+                // verifyEmail();
                 setUserName();
+                history.push('/');
             })
             .catch(error => {
                 setError(error.message);
@@ -98,16 +103,17 @@ function Register() {
 
 
     const setUserName = () => {
+
         updateProfile(auth.currentUser, { displayName: name })
             .then(result => { })
     }
 
-    const verifyEmail = () => {
-        sendEmailVerification(auth.currentUser)
-            .then(result => {
-                console.log(result);
-            })
-    }
+    // const verifyEmail = () => {
+    //     sendEmailVerification(auth.currentUser)
+    //         .then(result => {
+    //             console.log(result);
+    //         })
+    // }
 
 
     return (

@@ -78,7 +78,7 @@ const Home = () => {
             {/* Our philosophy */}
 
             <div class="row g-0  my-5 py-5 philosophy topServices">
-                <div class="col-md-6">
+                <div class="col-md-6 ">
                     <img src="https://img1.grunge.com/img/gallery/when-did-physicians-start-to-be-called-doctors/intro-1608648669.jpg" class=" rounded-start" alt="" />
                 </div>
                 <div class="col-md-6">

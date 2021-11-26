@@ -58,35 +58,5 @@
     "title": "Orthopaedic surgery",
     "price": 25000,
     "image": "https://hcp.smanewstoday.com/wp-content/uploads/2018/07/DJELN_GW4AAhQ_7-1080x675.jpg"
-  },
-  {
-    "id": 11,
-    "title": "Brain Surgery",
-    "price": 50000,
-    "image": "https://wpcdn.us-midwest-1.vip.tn-cloud.net/www.9and10news.com/content/uploads/2018/04/04-18-18-HL-BRAIN-SURGERY-PKG-5.transfer.jpg"
-  },
-  {
-    "id": 12,
-    "title": "Spinal Fusion Surgery",
-    "price": 100000,
-    "image": "https://tse1.mm.bing.net/th?id=OIP.5wGWp92lQwVw42B2T1fvVQHaHa&pid=Api&P=0&w=300&h=300"
-  },
-  {
-    "id": 13,
-    "title": "Endoscopy",
-    "price": 15000,
-    "image": "https://tse2.mm.bing.net/th?id=OIP.FhPQUGeQr7CzxArWnRjENwHaE8&pid=Api&P=0&w=230&h=154"
-  },
-  {
-    "id": 14,
-    "title": "Laser Surgery",
-    "price": 10000,
-    "image": "https://tse3.mm.bing.net/th?id=OIP.2V7tE9BalQFokQVPaN8BuQHaDt&pid=Api&P=0&w=301&h=151"
-  },
-  {
-    "id": 15,
-    "title": "ElectroSurgery",
-    "price": 12000,
-    "image": "https://tse1.mm.bing.net/th?id=OIP.j65Z4VRNgzOOsTHWEH9DSAHaFC&pid=Api&P=0&w=223&h=152"
   }
 ]

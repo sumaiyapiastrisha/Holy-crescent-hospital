@@ -7,7 +7,7 @@ import useAuth from '../../../hooks/useAuth';
 
 
 const Header = () => {
-    const { user, logOut } = useAuth();
+    const { user, currentUser, logOut } = useAuth();
     return (
 
 
